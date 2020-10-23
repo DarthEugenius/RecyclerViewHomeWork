@@ -2,20 +2,19 @@ package com.example.recyclerviewhomework.models;
 
 import com.example.recyclerviewhomework.R;
 
-public class NumberModel {
+public class NumberEntity {
     String number;
-
     int color;
 
-    public final int evenNumbersColor = R.color.even_numbers_color;
-    public final int oddNumbersColor = R.color.odd_numbers_color;
+    public static final int EVEN_NUMBERS_COLOR = R.color.even_numbers_color;
+    public static final int ODD_NUMBERS_COLOR = R.color.odd_numbers_color;
 
-    public NumberModel(int number) {
+    public NumberEntity(int number) {
         this.number = String.valueOf(number);
         if (number % 2 == 0) {
-            this.color = evenNumbersColor;
+            this.color = EVEN_NUMBERS_COLOR;
         } else {
-            this.color = oddNumbersColor;
+            this.color = ODD_NUMBERS_COLOR;
         }
     }
 

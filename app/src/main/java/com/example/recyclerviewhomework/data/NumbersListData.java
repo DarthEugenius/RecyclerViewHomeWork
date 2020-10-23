@@ -1,32 +1,25 @@
 package com.example.recyclerviewhomework.data;
 
-import com.example.recyclerviewhomework.Constants;
-import com.example.recyclerviewhomework.models.NumberModel;
+import com.example.recyclerviewhomework.models.NumberEntity;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class NumbersListData {
-    private final List<NumberModel> list;
-
-    public NumbersListData() {
-        list = new ArrayList<>();
-        for (int i = 1; i <= Constants.NUMBER_LIST_SIZE; i++) {
-            list.add(new NumberModel(i));
-        }
-    }
+    private final List<NumberEntity> list;
 
     public NumbersListData(int n) {
         list = new ArrayList<>();
         for (int i = 1; i <= n; i++) {
-            list.add(new NumberModel(i));
+            list.add(new NumberEntity(i));
         }
     }
 
-    public List<NumberModel> getData() {
+    public List<NumberEntity> getData() {
         return list;
     }
-    public void addElement(){
-        list.add(new NumberModel(list.size()+1));
+
+    public void addElement() {
+        list.add(new NumberEntity(list.size() + 1));
     }
 }
