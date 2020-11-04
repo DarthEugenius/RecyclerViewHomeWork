@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="big_text_size">96sp</dimen>
+    <dimen name="text_size">48sp</dimen>
+    <dimen name="small_text_size">24sp</dimen>
+    <dimen name="small_number_view_width">128dp</dimen>
+    <dimen name="small_number_view_height">96dp</dimen>
+    <dimen name="small_number_view_margin_bottom">4dp</dimen>
+    <dimen name="button_margin_horizontal">8dp</dimen>
+    <dimen name="button_margin_vertical">4dp</dimen>
+</resources>
